@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<link href="C:\Users\Admin\Desktop\css\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet"> 
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	} 
+	ul{
+		margin: 0;
+		padding: 0;
+		background: dimgray;
+		list-style-type: none;
+	}
+
+	.main-menu li{
+		display: inline-block;
+		font-size: 20px;
+		padding: 10px;
+		width: 100px;
+		text-align: center;
+		position: relative;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+	}
+	.main-menu li:hover{
+		background: black;
+	}
+	.sub-menu{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 40px;
+
+	}
+	.main-menu li:hover .sub-menu{
+		display: block;
+	}
+
+	.sub-menu-2 {
+		display: none;
+		position: absolute;
+	}
+
+	 .drop:hover .sub-menu-2 {
+		display: block;
+		left: 120px;
+		top: 0px;
+		
+	}
+	i{
+		float:right;
+	
+}
+/*	.fa fa-angle-double-right{
+		float: right;
+	}
+*/
+	</style>
+</head>
+<body>
+     <br>
+     <div class="menu">
+
+     	<ul class="main-menu">
+     		<li> <a href="#"> Home <i class="fa fa-home" aria-hidden="true"></i> </a> </li>
+     		<li> <a href="#"> About </a> </li>
+     		<li> <a href="#"> Department </a> 
+     		     <ul class="sub-menu">
+     		     	<li> <a href="#"> cse </a> </li>
+     		     	<li> <a href="#"> mech </a> </li>
+
+     		     <li class="drop"> <a href="#"> entc   <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+
+     		          <ul class="sub-menu-2">
+     		     	<li> <a href="#"> electrical </a> </li>
+     		     	<li> <a href="#"> telecom </a> </li>
+     		     	<li> <a href="#"> ps  </a> </li>
+     		      </ul>    
+     	          </li>
+
+     		     		
+     		     
+     		 </li>
+     		</ul>
+
+     		          <li> <a href="#"> contact  </a> </li>
+     		          <li> <a href="#"> lab </a> </li>
+     		 </ul>
+     		 
+     		</div>	
+</body>
+</html>
